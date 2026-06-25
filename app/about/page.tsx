@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { PORTFOLIO_DATA } from "@/lib/data";
 import Reveal from "@/components/sections/Reveal";
 import Counter from "@/components/ui/Counter";
+import LinkedInProfileCard from "@/components/ui/LinkedInProfileCard";
 import { ScrambleText } from "@/components/ui/Scramble";
 
 const AbstractHead = dynamic(() => import("@/components/three/AbstractHead"), { ssr: false });
@@ -60,6 +61,10 @@ ROLE     :: ${personal.title}
 STATUS   :: Available for work
 LOC      :: ${personal.location}`}
             </pre>
+          </Reveal>
+
+          <Reveal>
+            <LinkedInProfileCard />
           </Reveal>
 
           {/* BIOGRAPHY */}
